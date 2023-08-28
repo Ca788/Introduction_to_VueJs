@@ -6,6 +6,7 @@
 
 
 ```html
+
 <div id="app">
   {{nome}}, {{idade}}, {{email}}
 </div>
