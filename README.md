@@ -4,7 +4,7 @@
 
 ## Sintaxe básica:
 
-<body>
+body
 <div id="app">
 {{nome}}, {{idade}}, {{email}}
 </div>
@@ -22,7 +22,7 @@
     vm.nome = "Duca"
     console.log(vm);
 </script>
-</body>
+/body
 
 # div id="app": Aqui, um elemento div é criado com o atributo id definido como "app". Isso provavelmente é usado como um ponto de montagem para a aplicação Vue.js. A aplicação Vue será associada a este elemento, permitindo que ela controle e atualize o conteúdo dentro dele.
 
