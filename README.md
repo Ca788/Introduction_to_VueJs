@@ -4,10 +4,12 @@
 
 ## Sintaxe básica:
 
-
-`<div id="app">
+<pre>
+<code>
+```
+&lt;div id="app"&gt;
   {{nome}}, {{idade}}, {{email}}
-</div>
+&lt;/div&gt;
 
 const vm = new Vue({
   el: "#app",
@@ -17,10 +19,9 @@ const vm = new Vue({
     email: "Ducaliima@gmail.com"
   }
 });
-
-vm.nome = "Duca";
-console.log(vm);`
-
+```
+</code>
+</pre>
 
 # div id="app": Aqui, um elemento div é criado com o atributo id definido como "app". Isso provavelmente é usado como um ponto de montagem para a aplicação Vue.js. A aplicação Vue será associada a este elemento, permitindo que ela controle e atualize o conteúdo dentro dele.
 
