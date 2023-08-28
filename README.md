@@ -5,9 +5,10 @@
 ## Sintaxe básica:
 
 
- div id="app">
-{{nome}}, {{idade}}, {{email}}
-
+```html
+<div id="app">
+  {{nome}}, {{idade}}, {{email}}
+</div>
 
     const vm = new Vue({
       el: "#app",
