@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/introduçãoVueJs/vue.js"></script>
+  <title>Exercios instâncias</title>
+</head>
+
+<body>
+  <div id="app">
+    {{Nome}}
+    {{Sobrenome}}
+  </div>
+
+  <div id="app1">
+    {{Nome}}
+    {{Sobrenome}}
+  </div>
+
+  <div id="app2">
+    {{Nome}}
+    {{Sobrenome}}
+  </div>
+
+  <script>
+
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        Nome: "Carlos",
+        Sobrenome: "Lima",
+      }
+    });
+
+    const vm1 = new Vue({
+      el: "#app1",
+      data: {
+        Nome: "Lane",
+        Sobrenome: "Oliveira",
+      }
+    });
+
+    const vm2 = new Vue({
+      el: "#app2",
+      data: {
+        Nome: "Herondina",
+        Sobrenome: "Costa",
+      }
+    });
+
+  </script>
+</body>
+
+</html>

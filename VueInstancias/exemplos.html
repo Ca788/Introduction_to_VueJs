@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/introduçãoVueJs/vue.js"></script>
+  <title>Função contrutura Vue clone</title>
+</head>
+
+<body>
+  <div id="app">
+    {{instrumento}}
+    {{cor}}
+  </div>
+
+  <script>
+    function VueClone(options) {
+      this.options = options;
+      this.el = document.querySelector(options.el);
+      this.data = options.data;
+    }
+
+    const vmClone = new VueClone({
+      el: "#app",
+      data: "Carlos",
+    });
+
+    console.log(vmClone)
+
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        instrumento: "Violão",
+        cor: "Vermelho"
+      },
+      computed: {
+        nomeProduto() {
+          return this.instrumento + ' ' + this.cor
+        }
+      }
+    });
+    console.log(this);
+
+
+  </script>
+</body>
+
+</html>

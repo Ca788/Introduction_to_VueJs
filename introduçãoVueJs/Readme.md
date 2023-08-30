@@ -34,3 +34,27 @@ script
 # vm.nome = "Duca": Aqui, o valor da propriedade nome dentro do objeto Vue é alterado para "Duca". Isso causará uma reatividade no Vue, fazendo com que o conteúdo exibido dentro do elemento com id "app" seja atualizado automaticamente para refletir essa alteração.
 
 # console.log(vm);: Este comando exibe o objeto Vue na console do navegador. Isso pode ser útil para verificar as propriedades e métodos disponíveis na instância Vue.
+
+## Data:
+
+A propiedade data é responsavel por dar a reatividade aos estados definido os seus getters e setters. Ela recebe um objeto ou uma função.
+
+## Proxy:
+
+Toda propiedade dentro de data, é também representada diretamente no objeto Vue(proxy), Se começar com $ ou \_ não é feito proxy para evitar conflito com as propiedades de Vue.
+
+exemplo:
+
+const vm = new Vue({
+el: "#app",
+data: {
+titulo: "Vue.js completo",
+$preco: 59
+}
+});
+
+    vm.$data.titulo = // Vue.js completo
+    vm.titulo = // Vue.js completo
+
+    vm.$data.$preco = // 59
+    vm.$preco; // undefined

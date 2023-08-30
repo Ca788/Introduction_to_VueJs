@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script src="/introduçãoVueJs/vue.js"></script>
   <title>Reatividade e virtual dom vueJs</title>
 </head>
@@ -18,14 +19,12 @@
   </div>
 
   <div id="app2">
-    <p> T Shirt - R$ <span>{{preco2}}</span></p>
+    <p> Shoes - R$ <span>{{preco2}}</span></p>
     <button @click="total2++">Adicionar</button>
     <button @click="total2--">Remover</button>
     <span>{{total2}}</span>
     <p>Total: <span>{{preco2 * total2}}</span></p>
   </div>
-
-
 
   <script src="reatividadeDom.js"></script>
 </body>

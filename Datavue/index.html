@@ -4,30 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vue.js</title>
-  <script src="vue.js"></script>
+  <script src="/introduçãoVueJs/vue.js"></script>
+  <title>Data</title>
 </head>
 
 <body>
   <div id="app">
-    Nome: {{ nome }}, Idade: {{ idade }}, Email: {{ email }}<br>
-    <input type="text" v-model="nome">
-    <input type="text" v-model="idade">
-    <input type="text" v-model="email">
+    {{logado}}
   </div>
 
   <script>
-
     const vm = new Vue({
       el: "#app",
       data: {
-        nome: "",
-        idade: "",
-        email: "",
+        logado: ""
       }
     });
 
+    setTimeout(() => {
+      vm.logado = "Sim"
+    }, 1000);
   </script>
+
 </body>
 
 </html>
