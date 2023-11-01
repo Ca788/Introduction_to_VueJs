@@ -10,10 +10,10 @@
 
 <body>
   <div id="app">
-    Nome: {{ nome }}, Idade: {{ idade }}, Email: {{ email }}<br>
-    <input type="text" v-model="nome">
-    <input type="text" v-model="idade">
-    <input type="text" v-model="email">
+    {{nome}}, {{idade}}, {{email}} <br>
+    <input v-model="nome" type="text" />
+    <input v-model="idade" type="number" />
+    <input v-model="email" type="text" />
   </div>
 
   <script>
@@ -23,9 +23,9 @@
       data: {
         nome: "",
         idade: "",
-        email: "",
+        email: ""
       }
-    });
+    })
 
   </script>
 </body>
